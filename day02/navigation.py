@@ -15,7 +15,7 @@ class Submarine:
                 yield order, int(value)
 
     def update_position_simple(self, order, value):
-        print(order, type(order).__name__, value, type(value).__name__)
+        # print(order, type(order).__name__, value, type(value).__name__)
         if order == 'forward':
             self.horizontal += value
         elif order == 'up':
@@ -24,7 +24,7 @@ class Submarine:
             self.depth += value
 
     def update_position(self, order, value):
-        print(order, value)
+        # print(order, value)
         if order == 'forward':
             self.horizontal += value
             self.depth += (self.aim * value)
