@@ -4,7 +4,7 @@ from minimum import read_input, sum_risk_levels, find_largest_basins
 
 INPUT_FILE = 'test_input.txt'
 
-class TestDigits(unittest.TestCase):
+class TestHeightmap(unittest.TestCase):
     def test_minimum(self):
         """
         Test: part1
