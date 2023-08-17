@@ -1,7 +1,7 @@
 from bisect import insort
-OPEN_CHARS = '([{<'
+OPENING_CHARS = '([{<'
 CLOSING_CHARS = ')]}>'
-OPEN_CLOSE_PAIRS = {o:c for o, c in zip(OPEN_CHARS, CLOSING_CHARS)}
+OPEN_CLOSE_PAIRS = {o:c for o, c in zip(OPENING_CHARS, CLOSING_CHARS)}
 CLOSING_PAIRS = {c:o for o, c in OPEN_CLOSE_PAIRS.items()}
 CORRUPTED_SCORES = {')': 3, ']': 57, '}': 1197, '>': 25137}
 AUTOCOMPLETE_SCORES = {')': 1, ']': 2, '}': 3, '>': 4}
